@@ -24,14 +24,42 @@ a:hover { color: var(--accent); }
 img { max-width: 100%; height: auto; display: block; }
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
 
-/* top bar */
-.top { border-bottom: 1px solid var(--rule); }
-.top .wrap { display: flex; align-items: baseline; gap: 24px; padding-top: 18px; padding-bottom: 14px; flex-wrap: wrap; }
-.wordmark { font: 600 17px/1 var(--sans); color: var(--ink); text-decoration: none; letter-spacing: .01em; }
+/* ---- school themes ---- */
+/* Approximate brand colors; replace with each university's official values. */
+body.theme-ou {
+  --gold: #B59A57; --gold-ink: #6E5826;
+  --accent: #B59A57; --accent-ink: #6E5826; --ink: #111111;
+  --cyber: #8A7339; --edge: #111111; --auto: #8A7339; --case: #4A4A4A;
+}
+body.theme-cobrand {
+  --gold: #B59A57; --crimson: #AC2B37;
+  --accent: #AC2B37; --accent-ink: #8C1F2B;
+  --cyber: #8A7339; --edge: #AC2B37; --auto: #1F2733; --case: #5C6675;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) body.theme-ou { --accent: #D4BC7E; --accent-ink: #E3CF9B; --ink: #F2F2F2; --cyber: #D4BC7E; --edge: #E6E6E6; --auto: #D4BC7E; --case: #B8B8B8; }
+  :root:not([data-theme="light"]) body.theme-cobrand { --accent: #E07A84; --accent-ink: #EBA1A8; --cyber: #D4BC7E; --edge: #E07A84; --auto: #CDD5E0; --case: #A3ADBB; }
+}
+
+/* ---- brand bar ---- */
+.brandbar .wrap { display: flex; align-items: baseline; gap: 14px; padding-top: 16px; padding-bottom: 12px; flex-wrap: wrap; }
+.wordmark { font: 600 17px/1.2 var(--sans); color: var(--ink); text-decoration: none; letter-spacing: .01em; }
 .wordmark span { color: var(--muted); font-weight: 400; }
-.nav { margin-left: auto; display: flex; gap: 20px; flex-wrap: wrap; font-size: 15px; }
-.nav a { color: var(--body); text-decoration: none; }
-.nav a:hover { color: var(--accent); }
+.schools { margin-left: auto; font-size: 14px; color: var(--muted); }
+.schools b { color: var(--ink); font-weight: 600; }
+.schoolrule { height: 4px; background: var(--rule); }
+.theme-ou .schoolrule { background: var(--gold); }
+.theme-cobrand .schoolrule { background: linear-gradient(90deg, var(--gold) 0 50%, var(--crimson) 50% 100%); }
+
+/* ---- sticky section tabs + progress ---- */
+.tabs { position: sticky; top: 0; z-index: 20; background: var(--bg); border-bottom: 1px solid var(--rule); }
+.tabs .wrap { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+.tabs .wrap::-webkit-scrollbar { display: none; }
+.tabs a { flex: none; padding: 11px 14px; font-size: 15px; color: var(--muted); text-decoration: none; white-space: nowrap; }
+.tabs a:hover { color: var(--ink); }
+.tabs a.on { color: var(--ink); font-weight: 600; background: var(--faint); }
+.tabs .progress { height: 3px; width: 0; background: var(--accent); }
+section[id], div[id].masthead { scroll-margin-top: 56px; }
 
 /* masthead */
 .masthead { padding: 56px 0 40px; border-bottom: 1px solid var(--rule); }
@@ -116,3 +144,7 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 14p
 footer p { max-width: none; margin: 0 0 8px; }
 footer img { width: 100%; max-width: 640px; margin: 0 0 18px; }
 code { font-family: Consolas, "Cascadia Mono", monospace; font-size: .9em; }
+
+/* themed details */
+.theme-ou .facts, .theme-cobrand .facts { border-top-color: var(--accent); }
+.theme-cobrand .facts { border-image: linear-gradient(90deg, var(--gold) 0 50%, var(--crimson) 50% 100%) 1; border-top-width: 3px; border-top-style: solid; }
