@@ -25,16 +25,17 @@ img { max-width: 100%; height: auto; display: block; }
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
 
 /* ---- school themes ---- */
-/* Approximate brand colors; replace with each university's official values. */
+/* OU: Gold #BC945B (PMS 465 C), ADA gold #877148 for text — from OU brand guidelines.
+   WPI crimson is approximate (#AC2B37); confirm against the WPI Visual Identity Guide. */
 body.theme-ou {
-  --gold: #B59A57; --gold-ink: #6E5826;
-  --accent: #B59A57; --accent-ink: #6E5826; --ink: #111111;
-  --cyber: #8A7339; --edge: #111111; --auto: #8A7339; --case: #4A4A4A;
+  --gold: #BC945B; --gold-ink: #877148;
+  --accent: #BC945B; --accent-ink: #6F5C38; --ink: #111111;
+  --cyber: #877148; --edge: #111111; --auto: #877148; --case: #4A4A4A;
 }
 body.theme-cobrand {
-  --gold: #B59A57; --crimson: #AC2B37;
+  --gold: #BC945B; --crimson: #AC2B37;
   --accent: #AC2B37; --accent-ink: #8C1F2B;
-  --cyber: #8A7339; --edge: #AC2B37; --auto: #1F2733; --case: #5C6675;
+  --cyber: #877148; --edge: #AC2B37; --auto: #1F2733; --case: #5C6675;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) body.theme-ou { --accent: #D4BC7E; --accent-ink: #E3CF9B; --ink: #F2F2F2; --cyber: #D4BC7E; --edge: #E6E6E6; --auto: #D4BC7E; --case: #B8B8B8; }
@@ -47,6 +48,12 @@ body.theme-cobrand {
 .wordmark span { color: var(--muted); font-weight: 400; }
 .schools { margin-left: auto; font-size: 14px; color: var(--muted); }
 .schools b { color: var(--ink); font-weight: 600; }
+.logos { margin-left: auto; display: flex; align-items: center; gap: 18px; }
+.logos img { height: 30px; width: auto; }
+.logos .x { color: var(--muted); font-size: 14px; }
+.footlogos { display: flex; align-items: center; gap: 36px; flex-wrap: wrap; margin: 0 0 20px; }
+.footlogos img { height: 46px; width: auto; max-width: none; margin: 0; }
+@media (max-width: 620px) { .logos img { height: 22px; } .logos { gap: 10px; } }
 .schoolrule { height: 4px; background: var(--rule); }
 .theme-ou .schoolrule { background: var(--gold); }
 .theme-cobrand .schoolrule { background: linear-gradient(90deg, var(--gold) 0 50%, var(--crimson) 50% 100%); }
