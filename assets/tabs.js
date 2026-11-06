@@ -15,4 +15,13 @@
   window.addEventListener('scroll', update, { passive: true });
   window.addEventListener('resize', update);
   update();
+  // Arriving with #section from another page: fonts and images load after the initial jump and
+  // shift the layout, so re-align once they're ready.
+  function realign() {
+    if (!location.hash) return;
+    var el = document.getElementById(location.hash.slice(1));
+    if (el) el.scrollIntoView({ behavior: 'instant', block: 'start' });
+  }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(realign);
+  window.addEventListener('load', realign);
 })();
