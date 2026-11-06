@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NAIRR Workshop Series · OU × WPI</title>
+<meta name="description" content="NAIRR workshop series on cybersecurity, edge AI and autonomous systems, developed by Oakland University and Worcester Polytechnic Institute.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://ou-care-ai.github.io/"><img src="assets/img/motif.png" alt=""> OU CARE AI</a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#curriculum">Curriculum</a>
+      <a href="#workshops">Workshops</a>
+      <a href="#platform">Platform</a>
+      <a href="#researchers">For researchers</a>
+      <a href="#resources">Resources</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="tick"></div>
+    <div class="kicker">NAIRR EAGER · Oakland University × Worcester Polytechnic Institute</div>
+    <h1>NAIRR Workshop Series:<br>Cybersecurity, Edge AI &amp; Autonomous Systems</h1>
+    <p class="lede">Hands-on workshops that teach AI for cybersecurity, security of AI systems, efficient edge AI and autonomous driving, run on the National AI Research Resource (NAIRR) through Jetstream2.</p>
+    <div class="btns">
+      <a class="btn primary" href="#workshops">Browse the workshops</a>
+      <a class="btn" href="#researchers">Use our compute</a>
+      <a class="btn" href="#resources">Slides &amp; guides</a>
+    </div>
+    <div class="hero-img"><img src="assets/img/ph-hero-program.svg" alt="Placeholder for program hero image"></div>
+  </div>
+</section>
+
+<section id="about" class="alt">
+  <div class="wrap">
+    <h2>About the program</h2>
+    <p class="sub">A two-university NAIRR project building open, reusable AI workshops</p>
+    <div class="grid g2">
+      <div>
+        <p>The workshop materials are developed by <b>Worcester Polytechnic Institute (WPI)</b> and <b>Oakland University (OU)</b> as part of the NAIRR program. They cover AI for cybersecurity, security of AI systems, AI-enabled sensing and control, efficient edge AI, and case studies that combine all of them.</p>
+        <p>Every workshop runs in a browser on a shared JupyterHub hosted on Jetstream2, so participants need no local GPU or setup.</p>
+        <p class="muted small"><span class="ph-note">Placeholder: award number, program dates, PI / Co-PI list, NSF EAGER description</span></p>
+      </div>
+      <div class="grid stats">
+        <div class="card stat"><div class="n">13</div><div class="l">sessions</div><p class="muted small">Intro, 11 workshops, and a wrap-up</p></div>
+        <div class="card stat"><div class="n">3</div><div class="l">tracks</div><p class="muted small">Cybersecurity · Edge AI · Autonomous systems</p></div>
+        <div class="card stat"><div class="n">2</div><div class="l">universities</div><p class="muted small">OU and WPI</p></div>
+        <div class="card stat"><div class="n">0</div><div class="l">installs needed</div><p class="muted small">Everything runs on the hub</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="curriculum">
+  <div class="wrap">
+    <h2>Curriculum map</h2>
+    <p class="sub">Start with the introduction, follow a track, then bring the tracks together in case studies</p>
+    <div class="map">
+      <div class="col">
+        <a class="node" href="#ws-1"><b>1</b>Introduction to NAIRR: tools and project walkthrough</a>
+      </div>
+      <div class="col">
+        <div class="track">
+          <a class="node cyber" href="#ws-2.1"><b>2.1</b>AI for Cybersecurity: threats and defenses</a><span class="arrow">→</span>
+          <a class="node cyber" href="#ws-2.2"><b>2.2</b>Security of AI Development using NAIRR</a><span class="arrow empty">→</span><span class="empty"></span>
+        </div>
+        <div class="track">
+          <a class="node edge" href="#ws-3.1"><b>3.1</b>Efficient Inference for Edge AI</a><span class="arrow">→</span>
+          <a class="node edge" href="#ws-3.2"><b>3.2</b>Domain-Specific Optimization in Edge AI</a><span class="arrow empty">→</span><span class="empty"></span>
+        </div>
+        <div class="track">
+          <a class="node auto" href="#ws-4.1"><b>4.1</b>AI for Autonomous Driving</a><span class="arrow">→</span>
+          <a class="node auto" href="#ws-4.2"><b>4.2</b>AI-Enabled Sensing and Controlling</a><span class="arrow">→</span>
+          <a class="node auto" href="#ws-4.3"><b>4.3</b>Sensor Fusion, Estimation &amp; Control</a>
+        </div>
+      </div>
+      <div class="col">
+        <a class="node case" href="#ws-5.1"><b>5.1</b>Case study: Edge AI and Cybersecurity in Action</a>
+        <a class="node case" href="#ws-5.2"><b>5.2</b>Case study: Cybersecurity in Autonomous Driving</a>
+        <a class="node case" href="#ws-5.3"><b>5.3</b>Case study: Real-time Control &amp; Decision-Making with Edge AI</a>
+        <a class="node case" href="#ws-5.4"><b>5.4</b>Combined case study: Cybersecurity, Edge AI &amp; Autonomous Driving</a>
+      </div>
+      <div class="col">
+        <a class="node" href="#ws-6"><b>6</b>Key takeaways and future directions</a>
+      </div>
+    </div>
+    <p class="muted small" style="margin-top:18px">Adapted from the series diagram in <a href="https://github.com/WPI-LIONS-Group/NAIRR-Workshops">WPI-LIONS-Group/NAIRR-Workshops</a>.</p>
+  </div>
+</section>
+
+<section id="workshops" class="alt">
+  <div class="wrap">
+    <h2>Workshops</h2>
+    <p class="sub">Each one links to its notebooks and slides in the repository where it lives</p>
+    <div class="chips" role="group" aria-label="Filter by track">
+      <button class="chip" aria-pressed="true" data-f="all">All</button>
+      <button class="chip" aria-pressed="false" data-f="track-cyber">Cybersecurity</button>
+      <button class="chip" aria-pressed="false" data-f="track-edge">Edge AI</button>
+      <button class="chip" aria-pressed="false" data-f="track-auto">Autonomous systems</button>
+      <button class="chip" aria-pressed="false" data-f="track-case">Case studies</button>
+    </div>
+    <div class="grid g3" id="ws-grid">
+
+      <article class="card ws track-core" id="ws-1">
+        <div class="thumb"><img src="assets/img/ph-ws-1.svg" alt="Placeholder for Intro thumbnail" loading="lazy"></div>
+        <div class="body"><div class="num">Session 1 · Core</div><h3>Introduction to NAIRR</h3>
+          <p class="muted small">What NAIRR and Jetstream2 are, connecting to the hub, and hands-on comparisons of local vs. cloud compute.</p>
+          <div class="links"><a href="https://github.com/MattyTheBoi/NAIRR_Intro">Materials</a></div></div>
+      </article>
+
+      <article class="card ws track-cyber" id="ws-2.1">
+        <div class="thumb"><img src="assets/img/ws-2.1.jpg" alt="Slide from workshop 2.1" loading="lazy"></div>
+        <div class="body"><div class="num">Workshop 2.1 · Cybersecurity</div><h3>AI for Cybersecurity</h3>
+          <p class="muted small">Binary classification and vulnerability detection with the NSL-KDD dataset.</p>
+          <div class="links"><a href="https://github.com/WPI-LIONS-Group/NAIRR-Workshops/tree/main/Workshops%20(WS)/WS-2.1-AI_for_Cybersecurity">Materials</a></div></div>
+      </article>
+
+      <article class="card ws track-cyber" id="ws-2.2">
+        <div class="thumb"><img src="assets/img/ws-2.2.jpg" alt="Slide from workshop 2.2" loading="lazy"></div>
+        <div class="body"><div class="num">Workshop 2.2 · Cybersecurity</div><h3>Security of AI Development</h3>
+          <p class="muted small">Adversarial attacks and defenses, model inversion, digital watermarking and LLM watermarking.</p>
+          <div class="links"><a href="https://github.com/WPI-LIONS-Group/NAIRR-Workshops/tree/main/Workshops%20(WS)/WS-2.2-Security_of_AI_Development">Materials</a></div></div>
+      </article>
+
+      <article class="card ws track-edge" id="ws-3.1">
+        <div class="thumb"><img src="assets/img/ws-3.1.jpg" alt="Slide from workshop 3.1" loading="lazy"></div>
+        <div class="body"><div class="num">Workshop 3.1 · Edge AI</div><h3>Efficient Inference for Edge AI</h3>
+          <p class="muted small">Quantization, pruning and knowledge distillation.</p>
+          <div class="links"><a href="https://github.com/lc-leonardo/Workshop_EdgeAI/tree/main/3.1">Materials</a></div></div>
+      </article>
+
+      <article class="card ws track-edge" id="ws-3.2">
+        <div class="thumb"><img src="assets/img/ws-3.2.jpg" alt="Slide from workshop 3.2" loading="lazy"></div>
+        <div class="body"><div class="num">Workshop 3.2 · Edge AI</div><h3>Domain-Specific Optimization in Edge AI</h3>
+          <p class="muted small">Efficient ViT attention, LLM SmoothQuant and diffusion model acceleration.</p>
+          <div class="links"><a href="https://github.com/lc-leonardo/Workshop_EdgeAI/tree/main/3.2">Materials</a></div></div>
+      </article>
+
+      <article class="card ws track-auto" id="ws-4.1">
+        <div class="thumb"><img src="assets/img/ph-ws-4.1.svg" alt="Placeholder for 4.1 thumbnail" loading="lazy"></div>
+        <div class="body"><div class="num">Workshop 4.1 · Autonomous systems</div><h3>AI for Autonomous Driving</h3>
+          <p class="muted small"><span class="ph-note">Placeholder: description and materials link</span></p>
+          <div class="links"><span class="muted">Materials coming</span></div></div>
+      </article>
+
+      <article class="card ws track-auto" id="ws-4.2">
+        <div class="thumb"><img src="assets/img/ws-4.2.jpg" alt="Slide from workshop 4.2" loading="lazy"></div>
+        <div class="body"><div class="num">Workshop 4.2 · Autonomous systems</div><h3>AI-Enabled Sensing and Controlling</h3>
+          <p class="muted small">Camera sensing, LiDAR sensing, and AI-based search and planning.</p>
+          <div class="links"><a href="https://github.com/WPI-LIONS-Group/NAIRR-Workshops/tree/main/Workshops%20(WS)/WS-4.2-AI_Enabled_Sensing_and_Controlling">Materials</a></div></div>
+      </article>
+
+      <article class="card ws track-auto" id="ws-4.3">
+        <div class="thumb"><img src="assets/img/ws-4.3.jpg" alt="Slide from workshop 4.3" loading="lazy"></div>
+        <div class="body"><div class="num">Workshop 4.3 · Autonomous systems</div><h3>Sensor Fusion, Estimation &amp; Control</h3>
+          <p class="muted small">Camera–LiDAR projection, Kalman filtering, LiDAR 3D tracking, path-tracking control and a capstone.</p>
+          <div class="links"><a href="https://github.com/MattyTheBoi/NAIRR-Workshops-OU/tree/main/4.3">Materials</a></div></div>
+      </article>
+
+      <article class="card ws track-case" id="ws-5.1">
+        <div class="thumb"><img src="assets/img/ws-5.1.jpg" alt="Slide from workshop 5.1" loading="lazy"></div>
+        <div class="body"><div class="num">Workshop 5.1 · Case study</div><h3>Edge AI and Cybersecurity in Action</h3>
+          <p class="muted small">Network traffic analysis, edge AI anomaly detection and streaming inference with alerts.</p>
+          <div class="links"><a href="https://github.com/lc-leonardo/Workshop_EdgeAI/tree/main/5.1">Materials</a></div></div>
+      </article>
+
+      <article class="card ws track-case" id="ws-5.2">
+        <div class="thumb"><img src="assets/img/ws-5.2.jpg" alt="Slide from workshop 5.2" loading="lazy"></div>
+        <div class="body"><div class="num">Workshop 5.2 · Case study</div><h3>Cybersecurity in Autonomous Driving</h3>
+          <p class="muted small">CAN-bus intrusion detection, sensor spoofing, and a DriveLM vision-language model.</p>
+          <div class="links"><a href="https://github.com/AswiniS94/NAIRR-Workshop-5.2">Materials</a></div></div>
+      </article>
+
+      <article class="card ws track-case" id="ws-5.3">
+        <div class="thumb"><img src="assets/img/ws-5.3.jpg" alt="Slide from workshop 5.3" loading="lazy"></div>
+        <div class="body"><div class="num">Workshop 5.3 · Case study</div><h3>Edge Computing in AI</h3>
+          <p class="muted small">Agentic edge RAG, real-time decision-making, imitation learning and intelligent offloading, with a small local LLM on CPU.</p>
+          <div class="links"><a href="https://github.com/NifulIslam/NAIRR-5.3">Materials</a></div></div>
+      </article>
+
+      <article class="card ws track-case" id="ws-5.4">
+        <div class="thumb"><img src="assets/img/ws-5.4.jpg" alt="Slide from workshop 5.4" loading="lazy"></div>
+        <div class="body"><div class="num">Workshop 5.4 · Case study</div><h3>Multimodal Edge AI for Autonomous Response</h3>
+          <p class="muted small">Data fusion, multimodal threat detection, real-time inference and alerts, and autonomous response simulation.</p>
+          <div class="links"><a href="https://github.com/lc-leonardo/Workshop_EdgeAI/tree/main/5.4">Materials</a></div></div>
+      </article>
+
+      <article class="card ws track-core" id="ws-6">
+        <div class="thumb"><img src="assets/img/ph-ws-6.svg" alt="Placeholder for Key Takeaways thumbnail" loading="lazy"></div>
+        <div class="body"><div class="num">Session 6 · Core</div><h3>Key Takeaways &amp; Future Directions</h3>
+          <p class="muted small">A lecture-only recap that ties the series together.</p>
+          <div class="links"><span class="muted"><span class="ph-note">Placeholder: recap slides link</span></span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="platform">
+  <div class="wrap">
+    <h2>The platform</h2>
+    <p class="sub">A JupyterHub on Jetstream2, provided through the NAIRR Pilot</p>
+    <div class="grid g4">
+      <div class="card t-blue"><span class="badge">1</span><h3>Open a link</h3><p class="small">Each workshop has a link that logs you in and pulls its notebooks into your workspace.</p></div>
+      <div class="card t-blue"><span class="badge">2</span><h3>Pick an environment</h3><p class="small">One per workshop, CPU or GPU, with every library already installed.</p></div>
+      <div class="card t-blue"><span class="badge">3</span><h3>Work in the browser</h3><p class="small">Notebooks run on Jetstream2 servers. Large datasets and models are already mounted.</p></div>
+      <div class="card t-blue"><span class="badge">4</span><h3>Keep your files</h3><p class="small">Your home folder persists between sessions and workshops.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="researchers" class="alt">
+  <div class="wrap">
+    <h2>For researchers</h2>
+    <p class="sub">Research groups can use the project's Jetstream2 allocation for their own work</p>
+    <div class="grid g2">
+      <div class="card">
+        <h3>Using the allocation today</h3>
+        <p>Groups we work with run their own virtual machines on the project. The researcher guide covers what this project also runs, what things cost, and the rules that keep a shared allocation working.</p>
+        <div class="btns" style="margin-top:16px">
+          <a class="btn primary" href="https://github.com/OU-CARE-AI/researcher-guide">Read the researcher guide</a>
+        </div>
+      </div>
+      <div class="card t-green">
+        <h3>Coming: request-based access</h3>
+        <p>Ask for an instance by opening a GitHub issue. It's created for you with sensible defaults, idle instances shut down automatically, and nobody needs admin access to the cloud project.</p>
+        <div class="btns" style="margin-top:16px">
+          <a class="btn" href="https://github.com/OU-CARE-AI/vm-requests">See the request form (preview)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
+  <div class="wrap">
+    <h2>Resources</h2>
+    <p class="sub">Slides, guides and templates</p>
+    <div class="grid g3">
+      <a class="card" href="https://github.com/OU-CARE-AI/researcher-guide/releases"><h3>Researcher guide deck</h3><p class="muted small">Do's, don'ts and costs for groups sharing the allocation (.pptx)</p></a>
+      <a class="card" href="https://github.com/OU-CARE-AI/deck-template"><h3>Deck template</h3><p class="muted small">The house slide template these materials use, with build scripts</p></a>
+      <a class="card" href="https://github.com/WPI-LIONS-Group/NAIRR-Workshops"><h3>WPI workshop repository</h3><p class="muted small">Workshops 2.1, 2.2 and 4.2, plus synced edge AI workshops</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Team</h2>
+    <p class="sub">Faculty, graduate students and REU undergraduates at OU and WPI</p>
+    <img src="assets/img/ph-team-photo.svg" alt="Placeholder for team photo" style="border-radius:12px;border:1px solid var(--line)">
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/img/ph-logo-partners.svg" alt="Placeholder for partner logos" style="max-width:700px">
+    <div><span class="ph-note">Placeholder: acknowledgment, e.g. "This work is supported by the National Science Foundation under award {{AWARD}} and used resources of the NAIRR Pilot (Jetstream2)."</span></div>
+    <div>© OU CARE AI · <a href="https://github.com/OU-CARE-AI">github.com/OU-CARE-AI</a></div>
+  </div>
+</footer>
+
+<script>
+  const chips = document.querySelectorAll('.chip');
+  chips.forEach(c => c.addEventListener('click', () => {
+    chips.forEach(x => x.setAttribute('aria-pressed', x === c));
+    const f = c.dataset.f;
+    document.querySelectorAll('#ws-grid .ws').forEach(card => {
+      card.style.display = (f === 'all' || card.classList.contains(f) || card.classList.contains('track-core') && f === 'all') ? '' : 'none';
+    });
+  }));
+</script>
+</body>
+</html>
