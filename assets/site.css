@@ -155,3 +155,9 @@ code { font-family: Consolas, "Cascadia Mono", monospace; font-size: .9em; }
 /* themed details */
 .theme-ou .facts, .theme-cobrand .facts { border-top-color: var(--accent); }
 .theme-cobrand .facts { border-image: linear-gradient(90deg, var(--gold) 0 50%, var(--crimson) 50% 100%) 1; border-top-width: 3px; border-top-style: solid; }
+
+/* ---- under-construction notice ---- */
+.notice { background: var(--faint); border-bottom: 1px solid var(--rule); font-size: 14px; color: var(--muted); }
+.notice .wrap { padding-top: 8px; padding-bottom: 8px; }
+.notice b { color: var(--ink); font-weight: 600; }
+.ws .links .ph { font-size: .85em; }
