@@ -4,7 +4,7 @@
 Collaborative Research: EAGER: NAIRR Pilot Expansion (FA1) · Oakland University and Worcester Polytechnic Institute
 NSF awards [#2528533](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2528533) and [#2528534](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2528534)
 
-**Website: https://ou-care-ai.github.io/nairr-eager/**
+**Website: https://ou-care-ai.github.io/nairr-workshops/**
 
 ## Overview
 
