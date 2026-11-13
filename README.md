@@ -26,9 +26,8 @@ domains:
 | 2.2 | Security of AI Development Using NAIRR | [WPI-LIONS-Group/NAIRR-Workshops](https://github.com/WPI-LIONS-Group/NAIRR-Workshops) |
 | 3.1 | Efficient Inference for Edge AI | [lc-leonardo/Workshop_EdgeAI](https://github.com/lc-leonardo/Workshop_EdgeAI/tree/main/3.1) |
 | 3.2 | Domain-Specific Optimization in Edge AI | [lc-leonardo/Workshop_EdgeAI](https://github.com/lc-leonardo/Workshop_EdgeAI/tree/main/3.2) |
-| 4.1 | AI for Autonomous Driving | *coming* |
+| 4.1 | AI for Autonomous Driving | [NAIRR-Workshops-OU/4.3](https://github.com/MattyTheBoi/NAIRR-Workshops-OU/tree/main/4.3) (folder still named 4.3) |
 | 4.2 | AI-Enabled Sensing and Controlling | [WPI-LIONS-Group/NAIRR-Workshops](https://github.com/WPI-LIONS-Group/NAIRR-Workshops) |
-| 4.3 | Sensor Fusion, Estimation, and Control | [NAIRR-Workshops-OU/4.3](https://github.com/MattyTheBoi/NAIRR-Workshops-OU/tree/main/4.3) |
 | 5.1 | Case study: Edge AI and Cybersecurity in Action | [lc-leonardo/Workshop_EdgeAI](https://github.com/lc-leonardo/Workshop_EdgeAI/tree/main/5.1) |
 | 5.2 | Case study: Cybersecurity in Autonomous Driving | [AswiniS94/NAIRR-Workshop-5.2](https://github.com/AswiniS94/NAIRR-Workshop-5.2) |
 | 5.3 | Case study: Real-time Control and Decision-Making with Edge AI | [NifulIslam/NAIRR-5.3](https://github.com/NifulIslam/NAIRR-5.3) |
